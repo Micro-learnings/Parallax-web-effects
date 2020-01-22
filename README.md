@@ -8,6 +8,12 @@ Parallax effects made with vanilla JS + VivusSVG plugin
  - `.getBoundingClientRect()` method returns the difference netween the element top and the viewport top.
  - `ìsInViewport()` function checks wheter the argumented element is inside the viewport.
  - Vivus SVG accepts a second optional argument: a callback that will trigger when the drawing finishes [(plugin docs)](https://github.com/maxwellito/vivus#vivusjs)
+ - Smooth translation effect made by the final CSS rule:
+ ````css
+ .parallax {
+    transition: transform 10s cubic-bezier(0,1,.5,1)
+ }
+ ````
 
 ## External resources
  - VivusSVG: self-drawing plugin for SVG: https://github.com/maxwellito/vivus
